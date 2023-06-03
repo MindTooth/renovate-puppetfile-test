@@ -4,7 +4,7 @@
 # Test plain GitHub over HTTP
 mod 'apache',
   :git => 'https://github.com/puppetlabs/puppetlabs-apache.git',
-  :tag => 'v8.6.0'
+  :tag => 'v7.0.0'
 
 # Test GitHub w/ git-tags (github-tags perhaps?)
 mod 'docker',
