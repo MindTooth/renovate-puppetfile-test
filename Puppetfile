@@ -9,7 +9,7 @@ mod 'apache',
 # Test GitHub w/ git-tags (github-tags perhaps?)
 mod 'docker',
   :git => 'git@github.com:puppetlabs/puppetlabs-docker.git',
-  :tag => 'v6.1.0'
+  :tag => 'v7.0.0'
 
 # Test regular git-tags against non-GitHub
 mod 'logrotate',
