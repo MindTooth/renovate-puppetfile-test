@@ -24,4 +24,4 @@ mod 'lvm',
 # External repo - sr.ht
 mod 'rabbitmq',
   :git => 'https://git.sr.ht/~mindtooth/puppet-rabbitmq',
-  :tag => 'v10.0.0'
+  :tag => 'v10.3.0'
