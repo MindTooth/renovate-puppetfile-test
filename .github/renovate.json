@@ -10,6 +10,8 @@
     }
   ],
 
+  "enabledManagers": ["puppet"],
+
   "packageRules": [
     {
       "matchManagers": ["puppet"],
