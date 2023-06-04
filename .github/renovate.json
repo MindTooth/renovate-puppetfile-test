@@ -37,10 +37,20 @@
     {
       "matchManagers": ["puppet"],
       "matchPackagePatterns": [
+        "puppetlabs-stdlib",
+        "gitlab\\.com[:/]hitchhikers/puppet-modules/puppetlabs-stdlib(?:\\.git)?"
+      ],
+      "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-stdlib.git"
+    },
+
+    {
+      "matchManagers": ["puppet"],
+      "matchPackagePatterns": [
         "gitlab\\.com[:/]hitchhikers/puppet-modules/camptocamp-systemd(?:\\.git)?"
       ],
       "customChangelogUrl": "https://github.com/camptocamp/puppet-systemd"
     },
+
     {
       "matchManagers": ["puppet"],
       "matchPackagePatterns": [
