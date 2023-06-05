@@ -34,6 +34,14 @@
         "git@gitlab\\.com:hitchhikers/puppet-modules/voxpupuli-logrotate\\.git"
       ],
       "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate"
+    },
+
+    {
+      "matchManagers": ["puppet"],
+      "matchPackageNames": [
+        "git@gitlab\\.com:hitchhikers/puppet-modules/voxpupuli-lvm\\.git"
+      ],
+      "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate"
     }
   ]
 }

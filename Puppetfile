@@ -17,9 +17,9 @@ mod 'logrotate',
   :tag => 'v3.3.0'
 
 # Test regular HTTP against GitLab
-# mod 'lvm',
-#   :git => 'https://gitlab.com/hitchhikers/puppet-modules/puppetlabs-lvm.git',
-#   :tag => 'v1.4.0'
+mod 'lvm',
+  :git => 'https://gitlab.com/hitchhikers/puppet-modules/puppetlabs-lvm.git',
+  :tag => 'v1.4.0'
 
 # External repo - sr.ht
 # mod 'rabbitmq',
