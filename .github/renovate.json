@@ -41,7 +41,10 @@
       "matchPackageNames": [
         "git@gitlab\\.com:hitchhikers/puppet-modules/puppetlabs-lvm\\.git"
       ],
-      "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate"
+      "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate",
+      "prBodyDefinitions": {
+        "Package": "[{{{ depName ](https://github.com/voxpupuli/puppet-logrotate)"
+      }
     }
   ]
 }
