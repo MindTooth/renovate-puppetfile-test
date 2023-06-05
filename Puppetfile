@@ -14,7 +14,7 @@
 # Test regular git-tags against non-GitHub
 mod 'logrotate',
   :git => 'git@gitlab.com:hitchhikers/puppet-modules/voxpupuli-logrotate.git',
-  :tag => 'v3.3.0'
+  :tag => 'v3.4.0'
 
 # Test regular HTTP against GitLab
 # mod 'lvm',
