@@ -34,6 +34,39 @@
         "git@gitlab\\.com:hitchhikers/puppet-modules/voxpupuli-logrotate\\.git"
       ],
       "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate"
+    },
+
+    {
+      "matchManagers": ["puppet"],
+      "matchPackagePatterns": [
+        "puppetlabs-stdlib",
+        "gitlab\\.com[:/]hitchhikers/puppet-modules/puppetlabs-stdlib(?:\\.git)?"
+      ],
+      "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-stdlib.git"
+    },
+
+    {
+      "matchManagers": ["puppet"],
+      "matchPackagePatterns": [
+        "gitlab\\.com[:/]hitchhikers/puppet-modules/camptocamp-systemd(?:\\.git)?"
+      ],
+      "customChangelogUrl": "https://github.com/camptocamp/puppet-systemd"
+    },
+
+    {
+      "matchManagers": ["puppet"],
+      "matchPackagePatterns": [
+        "gitlab\\.com[:/]hitchhikers/puppet-modules/voxpupuli-systemd(?:\\.git)?"
+      ],
+      "customChangelogUrl": "https://github.com/voxpupuli/puppet-systemd"
+    },
+
+    {
+      "matchManagers": ["puppet"],
+      "matchPackagePatterns": [
+        "gitlab\\.com[:/]hitchhikers/puppet-modules/23kl4j2kl3j4lk2j34(?:\\.git)?"
+      ],
+      "customChangelogUrl": "https://github.com/voxpupuli/puppet-rabbitmq"
     }
   ]
 }
