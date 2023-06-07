@@ -15,25 +15,10 @@
   "packageRules": [
     {
       "matchManagers": ["puppet"],
-      "matchPackagePatterns": ["voxpupuli-logrotate(?:\\.git)?"],
-      "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate"
-    },
-
-    {
-      "matchManagers": ["puppet"],
-      "matchPackagePatterns": ["voxpupuli-logrotate"],
-      "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate",
-      "prBodyDefinitions": {
-        "Package": "[{{{ depName ](https://github.com/voxpupuli/puppet-logrotate)"
-      }
-    },
-
-    {
-      "matchManagers": ["puppet"],
       "matchPackagePatterns": [
         "git@gitlab\\.com:hitchhikers/puppet-modules/voxpupuli-logrotate\\.git"
       ],
-      "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate"
+      "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-apache"
     },
 
     {
@@ -41,10 +26,7 @@
       "matchPackagePatterns": [
         "git@gitlab\\.com:hitchhikers/puppet-modules/puppetlabs-lvm\\.git"
       ],
-      "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate",
-      "prBodyDefinitions": {
-        "Package": "[{{{ depName ](https://github.com/voxpupuli/puppet-logrotate)"
-      }
+      "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate"
     }
   ]
 }
