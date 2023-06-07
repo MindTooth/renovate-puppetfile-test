@@ -21,7 +21,7 @@
 
     {
       "matchManagers": ["puppet"],
-      "matchPackagePatterns": ["voxpupuli\\-logrotate"],
+      "matchPackagePatterns": ["voxpupuli-logrotate"],
       "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate",
       "prBodyDefinitions": {
         "Package": "[{{{ depName ](https://github.com/voxpupuli/puppet-logrotate)"
@@ -30,7 +30,7 @@
 
     {
       "matchManagers": ["puppet"],
-      "matchPackageNames": [
+      "matchPackagePatterns": [
         "git@gitlab\\.com:hitchhikers/puppet-modules/voxpupuli-logrotate\\.git"
       ],
       "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate"
@@ -38,7 +38,7 @@
 
     {
       "matchManagers": ["puppet"],
-      "matchPackageNames": [
+      "matchPackagePatterns": [
         "git@gitlab\\.com:hitchhikers/puppet-modules/puppetlabs-lvm\\.git"
       ],
       "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate",
