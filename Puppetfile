@@ -11,4 +11,4 @@ mod 'lvm',
 
 mod 'git@gitlab.com:hitchhikers/puppet-modules/puppetlabs-stdlib.git',
   :git => 'git@gitlab.com:hitchhikers/puppet-modules/puppetlabs-stdlib.git',
-  :tag => 'v4.0.1'
+  :tag => '4.25.1'
