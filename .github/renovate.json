@@ -38,13 +38,13 @@
 
   "regexManagers": [
     {
-      "fileMatch": ["\\.gitlab-ci\\.ya?ml$"],
+      "fileMatch": ["^\\.gitlab-ci\\.ya?ml$"],
       "matchStringsStrategy": "combination",
       "matchStrings": [
-        "['\"]?(?<depName>pipeline-fragments/docker-lint)['\"]?\\s*ref:\\s['\"]?(?<currentValue>[\\d-]*)['\"]?",
-        "['\"]?(?<depName>puppet-modules/renovate-regex-autoreplace-test)['\"]?\\s*ref:\\s['\"]?(?<currentValue>[\\d-]*)['\"]?"
+        "['\"]?(?<depName>pipeline-fragments/docker-lint)['\"]?\\s*ref:\\s['\"]?(?<currentValue>.*)['\"]?",
+        "['\"]?(?<depName>hitchhikers/puppet-modules/renovate-regex-autoreplace-test)['\"]?\\s*ref:\\s['\"]?(?<currentValue>.*)['\"]?"
       ],
-      "depNameTemplate": "puppet-modules/renovate-regex-autoreplace-test",
+      "depNameTemplate": "hitchhikers/puppet-modules/renovate-regex-autoreplace-test",
       "autoReplaceStringTemplate": "'{{{depName}}}'\n    ref: {{{newValue}}}",
       "datasourceTemplate": "gitlab-tags",
       "versioningTemplate": "gitlab-tags"
