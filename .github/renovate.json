@@ -10,7 +10,7 @@
     }
   ],
 
-  "enabledManagers": ["puppet"],
+  "enabledManagers": ["puppet", "regex"],
 
   "packageRules": [
     {
@@ -33,6 +33,21 @@
       "matchManagers": ["puppet"],
       "matchPackagePatterns": ["hitchhikers/puppet-modules/puppetlabs-stdlib"],
       "customChangelogUrl": "https://github.com/voxpupuli/puppet-rabbitmq"
+    }
+  ],
+
+  "regexManagers": [
+    {
+      "fileMatch": ["\\.gitlab-ci\\.ya?ml$"],
+      "matchStringsStrategy": "combination",
+      "matchStrings": [
+        "['\"]?(?<depName>pipeline-fragments/docker-lint)['\"]?\\s*ref:\\s['\"]?(?<currentValue>[\\d-]*)['\"]?",
+        "['\"]?(?<depName>puppet-modules/renovate-regex-autoreplace-test)['\"]?\\s*ref:\\s['\"]?(?<currentValue>[\\d-]*)['\"]?"
+      ],
+      "depNameTemplate": "puppet-modules/renovate-regex-autoreplace-test",
+      "autoReplaceStringTemplate": "'{{{depName}}}'\n    ref: {{{newValue}}}",
+      "datasourceTemplate": "gitlab-tags",
+      "versioningTemplate": "gitlab-tags"
     }
   ]
 }
