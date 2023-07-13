@@ -7,7 +7,7 @@ mod 'git@gitlab.com:hitchhikers/puppet-modules/voxpupuli-logrotate.git',
 
 mod 'lvm',
   :git => 'git@gitlab.com:hitchhikers/puppet-modules/puppetlabs-lvm.git',
-  :tag => 'v1.4.0'
+  :tag => 'v2.0.0'
 
 mod 'git@gitlab.com:hitchhikers/puppet-modules/puppetlabs-stdlib.git',
   :git => 'git@gitlab.com:hitchhikers/puppet-modules/puppetlabs-stdlib.git',
