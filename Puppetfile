@@ -3,7 +3,7 @@
 
 mod 'git@gitlab.com:hitchhikers/puppet-modules/voxpupuli-logrotate.git',
   :git => 'git@gitlab.com:hitchhikers/puppet-modules/voxpupuli-logrotate.git',
-  :tag => 'v3.3.0'
+  :tag => 'v6.1.0'
 
 mod 'lvm',
   :git => 'git@gitlab.com:hitchhikers/puppet-modules/puppetlabs-lvm.git',
