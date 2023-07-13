@@ -1,5 +1,5 @@
 ---
 include:
-  - project: "pipeline-fragments/docker-lint"
-    ref: v2.4.0
+  - project: 'hitchhikers/puppet-modules/renovate-regex-autoreplace-test'
+    ref: v7.0.0
     file: "ci-include-docker-lint-base.yml"
