@@ -19,7 +19,8 @@
   "packageRules": [
     {
       "matchManagers": ["puppet"],
-      "extends": [":disableDigestUpdates"]
+      "extends": [":disableDigestUpdates"],
+      "addLabels": ["puppet"]
     },
 
     {
