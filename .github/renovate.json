@@ -20,7 +20,7 @@
     {
       "matchManagers": ["puppet"],
       "matchPackageNames": [
-        "git@gitlab\\.com:hitchhikers/puppet-modules/voxpupuli-logrotate\\.git"
+        "gitlab\\.com[:/]hitchhikers/puppet-modules/voxpupuli-logrotate(?:\\.git)?"
       ],
       "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate"
     },
@@ -30,7 +30,7 @@
       "matchPackagePatterns": [
         "gitlab\\.com[:/]hitchhikers/puppet-modules/puppetlabs-lvm(?:\\.git)?"
       ],
-      "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-lvm.git"
+      "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-lvm"
     },
 
     {
@@ -38,7 +38,7 @@
       "matchPackagePatterns": [
         "gitlab\\.com[:/]hitchhikers/puppet-modules/puppetlabs-stdlib(?:\\.git)?"
       ],
-      "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-stdlib.git"
+      "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-stdlib"
     }
   ]
 }
