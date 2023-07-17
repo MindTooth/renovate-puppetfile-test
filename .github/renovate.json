@@ -19,7 +19,7 @@
   "packageRules": [
     {
       "matchManagers": ["puppet"],
-      "matchPackageNames": [
+      "matchPackagePatterns": [
         "gitlab\\.com[:/]hitchhikers/puppet-modules/voxpupuli-logrotate(?:\\.git)?"
       ],
       "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate"
