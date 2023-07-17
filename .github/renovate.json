@@ -18,7 +18,7 @@
 
   "enabledManagers": ["puppet"],
 
-  "prHeader": ":warning: Pull request is made to showcase a custom Puppefile setup.\\n\\n---",
+  "prHeader": ":warning: Pull request is made to showcase a custom Puppefile setup.\n\n---",
 
   "packageRules": [
     {
