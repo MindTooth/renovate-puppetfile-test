@@ -26,6 +26,18 @@
     {
       "matchManagers": ["puppet"],
       "matchPackagePatterns": [
+        "gitlab\\.com[:/]hitchhikers/puppet-modules/puppetlabs-apache(?:\\.git)?"
+      ],
+      "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-apache",
+      "prBodyDefinitions": {
+        "Package": "[lvm](https://github.com/puppetlabs/puppetlabs-apache)"
+      },
+      "commitMessageTopic": "dependency apache"
+    },
+
+    {
+      "matchManagers": ["puppet"],
+      "matchPackagePatterns": [
         "gitlab\\.com[:/]hitchhikers/puppet-modules/voxpupuli-logrotate(?:\\.git)?"
       ],
       "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate",

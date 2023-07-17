@@ -1,5 +1,8 @@
 # Puppet modules needed for local environment
-# basemodules is provided by ci-images/puppet6-master-base
+
+mod 'apache',
+  :git => 'git@gitlab.com:hitchhikers/puppet-modules/puppetlabs-apache.git',
+  :tag => 'v8.2.1'
 
 mod 'git@gitlab.com:hitchhikers/puppet-modules/voxpupuli-logrotate.git',
   :git => 'git@gitlab.com:hitchhikers/puppet-modules/voxpupuli-logrotate.git',
