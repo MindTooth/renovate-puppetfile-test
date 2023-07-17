@@ -1,6 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":label(renovate)", ":timezone(Europe/Berlin)"],
+  "extends": [
+    "config:best-practices",
+    ":label(renovate)",
+    ":timezone(Europe/Berlin)"
+  ],
   "hostRules": [
     {
       "matchHost": "https://gitlab.com/hitchhikers/puppet-modules",
@@ -10,12 +14,12 @@
     }
   ],
 
-  "enabledManagers": ["puppet", "regex"],
+  "enabledManagers": ["puppet"],
 
   "packageRules": [
     {
       "matchManagers": ["puppet"],
-      "matchPackagePatterns": [
+      "matchPackageNames": [
         "git@gitlab\\.com:hitchhikers/puppet-modules/voxpupuli-logrotate\\.git"
       ],
       "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate"
@@ -24,30 +28,17 @@
     {
       "matchManagers": ["puppet"],
       "matchPackagePatterns": [
-        "git@gitlab\\.com:hitchhikers/puppet-modules/puppetlabs-lvm\\.git"
+        "gitlab\\.com[:/]hitchhikers/puppet-modules/puppetlabs-lvm(?:\\.git)?"
       ],
-      "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate"
+      "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-lvm.git"
     },
 
     {
       "matchManagers": ["puppet"],
-      "matchPackagePatterns": ["hitchhikers/puppet-modules/puppetlabs-stdlib"],
-      "customChangelogUrl": "https://github.com/voxpupuli/puppet-rabbitmq"
-    }
-  ],
-
-  "regexManagers": [
-    {
-      "fileMatch": ["^\\.gitlab-ci\\.ya?ml$"],
-      "matchStringsStrategy": "combination",
-      "matchStrings": [
-        "['\"]?(?<depName>pipeline-fragments/docker-lint)['\"]?\\s*ref:\\s['\"]?(?<currentValue>.*)['\"]?",
-        "['\"]?(?<depName>hitchhikers/puppet-modules/renovate-regex-autoreplace-test)['\"]?\\s*ref:\\s['\"]?(?<currentValue>.*)['\"]?"
+      "matchPackagePatterns": [
+        "gitlab\\.com[:/]hitchhikers/puppet-modules/puppetlabs-stdlib(?:\\.git)?"
       ],
-      "depNameTemplate": "hitchhikers/puppet-modules/renovate-regex-autoreplace-test",
-      "autoReplaceStringTemplate": "'{{{depName}}}'\n    ref: {{{newValue}}}",
-      "datasourceTemplate": "gitlab-tags",
-      "versioningTemplate": "gitlab-tags"
+      "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-stdlib.git"
     }
   ]
 }

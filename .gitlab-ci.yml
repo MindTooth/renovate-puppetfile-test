@@ -1,5 +1,0 @@
----
-include:
-  - project: "pipeline-fragments/docker-lint"
-    ref: v2.4.0
-    file: "ci-include-docker-lint-base.yml"
