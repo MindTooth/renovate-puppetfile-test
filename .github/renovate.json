@@ -1,10 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
   "extends": [
     "config:best-practices",
     ":label(dependencies)",
     ":timezone(Europe/Berlin)"
   ],
+
   "hostRules": [
     {
       "matchHost": "https://gitlab.com/hitchhikers/puppet-modules",
@@ -15,6 +17,8 @@
   ],
 
   "enabledManagers": ["puppet"],
+
+  "prHeader": "This repository is made to showcase a custom Puppefile setup.",
 
   "packageRules": [
     {
