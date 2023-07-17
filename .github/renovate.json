@@ -26,7 +26,7 @@
       "prBodyDefinitions": {
         "Package": "[logrotate](https://github.com/voxpupuli/puppet-logrotate)"
       },
-      "commitMessageTopic": "logrotate"
+      "commitMessageTopic": "dependency logrotate"
     },
 
     {
@@ -34,7 +34,11 @@
       "matchPackagePatterns": [
         "gitlab\\.com[:/]hitchhikers/puppet-modules/puppetlabs-lvm(?:\\.git)?"
       ],
-      "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-lvm"
+      "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-lvm",
+      "prBodyDefinitions": {
+        "Package": "[lvm](https://github.com/puppetlabs/puppetlabs-lvm)"
+      },
+      "commitMessageTopic": "dependency lvm"
     },
 
     {
@@ -42,7 +46,11 @@
       "matchPackagePatterns": [
         "gitlab\\.com[:/]hitchhikers/puppet-modules/puppetlabs-stdlib(?:\\.git)?"
       ],
-      "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-stdlib"
+      "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-stdlib",
+      "prBodyDefinitions": {
+        "Package": "[stdlib](https://github.com/puppetlabs/puppetlabs-stdlib)"
+      },
+      "commitMessageTopic": "dependency stdlib"
     }
   ]
 }
