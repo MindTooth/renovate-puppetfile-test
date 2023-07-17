@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:best-practices",
-    ":label(renovate)",
+    ":label(dependencies)",
     ":timezone(Europe/Berlin)"
   ],
   "hostRules": [
@@ -30,7 +30,7 @@
       ],
       "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-apache",
       "prBodyDefinitions": {
-        "Package": "[lvm](https://github.com/puppetlabs/puppetlabs-apache)"
+        "Package": "[apache](https://github.com/puppetlabs/puppetlabs-apache)"
       },
       "commitMessageTopic": "dependency apache"
     },
