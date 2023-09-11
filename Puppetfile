@@ -16,4 +16,9 @@
 #   :git => 'git@gitlab.com:hitchhikers/puppet-modules/puppetlabs-stdlib.git',
 #   :tag => 'v4.0.1'
 
-mod 'saz-ssh', '9.0.0'
+# mod 'saz-ssh', '9.0.0'
+
+
+mod 'saz-ssh',
+    :git => 'git@github.com:saz/puppet-ssh',
+    :tag => 'v9.0.0'
