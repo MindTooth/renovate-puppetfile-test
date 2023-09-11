@@ -2,77 +2,17 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
 
   "extends": [
-    "config:best-practices",
-    ":label(dependencies)",
-    ":timezone(Europe/Berlin)"
-  ],
-
-  "hostRules": [
-    {
-      "matchHost": "https://gitlab.com/hitchhikers/puppet-modules",
-      "encrypted": {
-        "token": "wcFMA/xDdHCJBTolAQ/+OhqcMPEynyyg3M91QklQP981DBwhQCaaGk08ubG7C+wHUYflbrojzcf0uPoL7AZYhh4KFRTlHJ6rWRmSxQTPkozbUODfxjIdOon/qpGhKAe051lIHn5h7ZoyJAtfS+vgM0j1ei1tF0Glj3ZuxGAU0ng1ZQBc/0CYHjbuqIibn2krLaCpMUd4IYYhrrykO0EQ5dWVbqsVW5qfBX7r+jOLI4iz5nyDrEOelNJQ51nYKQpeDryFc6CN4i4lxKUbt7RKAul7kkhCYvDa+l+pvu9Paf2YHf12K+FEcuond49BAQoxgSwU9EI8KM7yK04ElDbvAS5MvyOrD73H7ZU9ZD4we2J3el0ksZH7wF8owP0V0MfBEbvCCdjxCZS4nxEdORrB4cXmrQDXEgn4uuuxDc93/u4RP8cU3IqM4aZ2GbSVCyN4aOkbbxcwzUNVto2IVsHt0VNGr1JYd7oMRbaEbEKv4BT0aogKKhEb/8+w/8tUVgrKo3uXNTPxVHJnrPeHNFxaVGBjmdrN8q4NN6lM1WCk5QbQqLPXVNrkTfydwCYh6cLQPOzcnyCtpxr+ZB6eXkoUX9stUtXh894vuS67M/QJJf0zgwyR5WKOMZxQ96CBvgYAzDr9Fiye9Vsdxv728TuoZ7HEtAHZkqKKt3qezBAUfBr9i5UhgZ+oFYNwdreHQJ3SagHgVwaGkYA0DDUjbxnfLnOkTwMsNjAoACq6F/d8dDJLhMbWX61HI6qDbE55jE6GarLD6FG+/2+ChIo0vVMuVLVlE5EOOXCyZTK5VogsiyzLV+MdXlWQ3KkUH29aTP9Y4WwV0jcNRLQChFw"
-      }
-    }
+    "config:recommended",
+    ":timezone(Europe/Berlin)",
+    ":label(dependencies)"
   ],
 
   "enabledManagers": ["puppet"],
 
-  "prHeader": ":warning: Pull request is made to showcase a custom Puppefile setup.\n\n---",
-
   "packageRules": [
     {
       "matchManagers": ["puppet"],
-      "extends": [":disableDigestUpdates"],
       "addLabels": ["puppet"]
-    },
-
-    {
-      "matchManagers": ["puppet"],
-      "matchPackagePatterns": [
-        "gitlab\\.com[:/]hitchhikers/puppet-modules/puppetlabs-apache(?:\\.git)?"
-      ],
-      "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-apache",
-      "prBodyDefinitions": {
-        "Package": "[apache](https://github.com/puppetlabs/puppetlabs-apache)"
-      },
-      "commitMessageTopic": "dependency apache"
-    },
-
-    {
-      "matchManagers": ["puppet"],
-      "matchPackagePatterns": [
-        "gitlab\\.com[:/]hitchhikers/puppet-modules/voxpupuli-logrotate(?:\\.git)?"
-      ],
-      "customChangelogUrl": "https://github.com/voxpupuli/puppet-logrotate",
-      "prBodyDefinitions": {
-        "Package": "[logrotate](https://github.com/voxpupuli/puppet-logrotate)"
-      },
-      "commitMessageTopic": "dependency logrotate"
-    },
-
-    {
-      "matchManagers": ["puppet"],
-      "matchPackagePatterns": [
-        "gitlab\\.com[:/]hitchhikers/puppet-modules/puppetlabs-lvm(?:\\.git)?"
-      ],
-      "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-lvm",
-      "prBodyDefinitions": {
-        "Package": "[lvm](https://github.com/puppetlabs/puppetlabs-lvm)"
-      },
-      "commitMessageTopic": "dependency lvm"
-    },
-
-    {
-      "matchManagers": ["puppet"],
-      "matchPackagePatterns": [
-        "gitlab\\.com[:/]hitchhikers/puppet-modules/puppetlabs-stdlib(?:\\.git)?"
-      ],
-      "customChangelogUrl": "https://github.com/puppetlabs/puppetlabs-stdlib",
-      "prBodyDefinitions": {
-        "Package": "[stdlib](https://github.com/puppetlabs/puppetlabs-stdlib)"
-      },
-      "commitMessageTopic": "dependency stdlib"
     }
   ]
 }
