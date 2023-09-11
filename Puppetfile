@@ -23,4 +23,4 @@ mod 'saz-ssh',
     :git => 'git@github.com:saz/puppet-ssh',
     :tag => 'v9.0.0'
 
-mod 'puppet-prometheus', '12.0.0'
+mod 'puppet-prometheus', '12.5.0'
